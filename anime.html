@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro, .popular-anime, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .intro h2, .popular-anime h2, .gallery h2, .contact h2 {
+            color: #333;
+        }
+        .popular-anime ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .popular-anime li {
+            background-color: #e6e6e6;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .contact form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Anime World</h1>
+        <p>Explore the fascinating world of Anime</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#popular-anime">Popular Anime</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="intro" class="intro">
+            <h2>What is Anime?</h2>
+            <p>Anime is a style of animation that originated in Japan and has become a global cultural phenomenon. With a variety of genres and themes, anime appeals to all age groups and has a rich, diverse storytelling tradition. Whether you're into action, adventure, romance, or fantasy, there's an anime for you!</p>
+        </section>
+
+        <!-- Popular Anime Section -->
+        <section id="popular-anime" class="popular-anime">
+            <h2>Popular Anime</h2>
+            <ul>
+                <li><strong>Naruto</strong> - A young ninja embarks on a journey to become the Hokage, the leader of his village.</li>
+                <li><strong>Attack on Titan</strong> - Humanity fights for survival against giant humanoid creatures known as Titans.</li>
+                <li><strong>One Piece</strong> - A group of pirates searches for the legendary treasure known as "One Piece".</li>
+                <li><strong>My Hero Academia</strong> - In a world where people have superpowers, a young boy strives to become the greatest hero.</li>
+                <li><strong>Demon Slayer</strong> - A boy seeks vengeance after his family is killed by demons, with his sister becoming one of them.</li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2>Anime Gallery</h2>
+            <div>
+                <img src="anime1.jpg" alt="Anime 1">
+                <img src="anime2.jpg" alt="Anime 2">
+                <img src="anime3.jpg" alt="Anime 3">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Got questions or just want to chat about your favorite anime? Feel free to reach out!</p>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Anime World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
