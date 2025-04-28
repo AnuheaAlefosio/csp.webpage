@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro, .features, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .intro h2, .features h2, .gallery h2, .contact h2 {
+            color: #333;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+        .contact form button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Car Showroom</h1>
+        <p>Your dream car is just a click away</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="intro" class="intro">
+            <h2>Introduction to Our Cars</h2>
+            <p>Explore a wide range of premium cars, designed for performance, luxury, and efficiency. Our cars are built with the latest technology and offer a seamless driving experience.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Car Features</h2>
+            <ul>
+                <li>Advanced Safety Features</li>
+                <li>Fuel Efficiency</li>
+                <li>Cutting-edge Technology</li>
+                <li>Luxurious Interiors</li>
+                <li>Powerful Engine Options</li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2>Car Gallery</h2>
+            <div>
+                <img src="car1.jpg" alt="Car 1">
+                <img src="car2.jpg" alt="Car 2">
+                <img src="car3.jpg" alt="Car 3">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Feel free to reach out to us using the form below:</p>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p style="text-align: center; padding: 10px; background-color: #333; color: white;">&copy; 2025 Car Showroom. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
