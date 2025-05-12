@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<audio id="background-music" autoplay loop>
-  <source src="audio/happy-kids.mp3" type="audio/mpeg">
-</audio>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -60,6 +57,11 @@
   </style>
 </head>
 <body>
+  <audio id="background-music" autoplay loop>
+    <source src="happy-kids.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <div class="spellie-box">
     <div class="emoji">🅰️🧠🎉</div>
     <h1>Welcome to Spellie!</h1>
@@ -69,9 +71,11 @@
 
   <script>
     function startGame() {
-      alert("Let's start spelling fun words!");
-      // Redirect or load game logic here
+      var music = document.getElementById("background-music");
+      music.play();
+      window.open("https://your-link-here.com", "_blank");
     }
   </script>
 </body>
 </html>
+
